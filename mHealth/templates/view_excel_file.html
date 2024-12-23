@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Excel Files</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Uploaded Excel Files</h1>
+        <div class="row">
+            {% for file in excel_files %}
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ file.name }}</h5>
+                            <form method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="action" value="download_hl7">
+                                <button type="submit" class="btn btn-primary">Download HL7 Format</button>
+                            </form>
+                            <form method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="action" value="plot_ppg">
+                                <button type="submit" class="btn btn-secondary">Plot PPG</button>
+                            </form>
+                            <form method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="action" value="plot_ecg">
+                                <button type="submit" class="btn btn-secondary">Plot ECG</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

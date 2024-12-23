@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Modern Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <title>About Us</title>
+
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-gradient: linear-gradient(135deg, #f6f9ff 0%, #eef5ff 100%);
+            --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            --nav-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+    
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--nav-shadow);
+            padding: 1rem 2rem;
+        }
+    
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+    
+        .nav-link {
+            font-weight: 500;
+            color: #4b5563 !important;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin: 0 0.25rem;
+        }
+    
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+            background: #f3f4f6;
+        }
+    
+        .about-header {
+            text-align: center;
+            color: var(--primary-color);
+            margin: 2rem 0;
+        }
+    
+        .about-header h1 {
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: #000000;  /* Changed to black */
+        }
+    
+        .about-section {
+            margin-bottom: 2rem;
+        }
+    
+        .about-section h4 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            color: #000000;  /* Changed to black */
+            margin-bottom: 1rem;
+        }
+    
+        .team-member {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 1rem;
+        }
+    
+        .team-member h5 {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+    
+        .team-member p {
+            color: #6b7280;
+        }
+    
+        .modern-footer {
+            background: white;
+            padding: 2rem;
+            margin-top: auto;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+        }
+    
+        .footer-links a {
+            color: #4b5563;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
+        }
+    
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+    </style>
+    
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/home">
+            <i class="fas fa-heartbeat me-2"></i>mHealth
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/contact"><i class="fas fa-envelope me-1"></i> Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/about"><i class="fas fa-info-circle me-1"></i> About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt me-1"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Us Content -->
+<div class="container mt-4">
+    <div class="about-header">
+        <h1>About Us</h1>
+        <p>Learn more about our mission, vision, and the amazing team behind mHealth.</p>
+    </div>
+
+    <!-- Company Overview -->
+    <div class="about-section">
+        <h4>Our Company</h4>
+        <p>mHealth is dedicated to improving healthcare through innovative solutions and technology. Our team works tirelessly to create products that make a difference in the lives of patients and healthcare providers alike.</p>
+    </div>
+
+    <!-- Mission Statement -->
+    <div class="about-section">
+        <h4>Our Mission</h4>
+        <p>Our mission is to revolutionize healthcare by delivering state-of-the-art solutions that empower individuals to take control of their health and well-being.</p>
+    </div>
+
+    <!-- Team Section -->
+    <div class="about-section">
+        <h4>Meet the Team</h4>
+        <div class="row">
+            <div class="col-md-4 team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h5>Vipu (Chotu)</h5>
+                <p>Chai Pani Wala</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h5>Dr. Krish Kumar Bhoruka</h5>
+                <p>Chief Marketing Officer</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="modern-footer">
+    <div class="container">
+        <div class="footer-content d-flex justify-content-between align-items-center flex-wrap">
+            <div class="copyright">
+                © 2024 mHealth. All Rights Reserved
+            </div>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

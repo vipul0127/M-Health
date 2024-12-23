@@ -1,0 +1,189 @@
+anyio==4.2.0
+apio==0.9.5
+appnope==0.1.3
+argon2-cffi==23.1.0
+argon2-cffi-bindings==21.2.0
+arrow==1.3.0
+asgiref==3.8.1
+asttokens==2.4.1
+async-lru==2.0.4
+attrs==23.2.0
+Babel==2.14.0
+beautifulsoup4==4.12.3
+bio==1.6.2
+biopython==1.83
+biothings-client==0.3.1
+bleach==6.1.0
+blinker==1.7.0
+cachetools==5.5.0
+certifi==2024.8.30
+cffi==1.16.0
+chardet==5.2.0
+charset-normalizer==3.3.2
+click==8.1.3
+colorama==0.4.6
+comm==0.2.1
+contourpy==1.3.0
+cycler==0.12.1
+debugpy==1.8.0
+decorator==5.1.1
+defusedxml==0.7.1
+Django==4.2.9
+django-admin-material-dashboard==1.0.10
+et-xmlfile==1.1.0
+executing==2.0.1
+fastjsonschema==2.19.1
+Flask==3.0.2
+fonttools==4.53.1
+fqdn==1.5.1
+google-api-core==2.20.0
+google-api-python-client==2.147.0
+google-auth==2.35.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.1
+googleapis-common-protos==1.65.0
+gprofiler-official==1.0.0
+gspread==6.1.2
+gunicorn==21.2.0
+httplib2==0.22.0
+idna==3.6
+ipykernel==6.29.0
+ipython==8.21.0
+isoduration==20.11.0
+itsdangerous==2.1.2
+jedi==0.19.1
+Jinja2==3.1.3
+joblib==1.4.2
+json5==0.9.14
+jsonpointer==2.4
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+jupyter-events==0.9.0
+jupyter-lsp==2.2.2
+jupyter_client==8.6.0
+jupyter_core==5.7.1
+jupyter_server==2.12.5
+jupyter_server_terminals==0.5.2
+jupyterlab==4.0.12
+jupyterlab_pygments==0.3.0
+jupyterlab_server==2.25.2
+kiwisolver==1.4.7
+-e git+https://github.com/enjoy-digital/litedram.git@5ece0901553b0134a94206604796a53c5669743c#egg=litedram
+-e git+https://github.com/enjoy-digital/liteeth.git@edc7188faabafa1c1b2662beb4a7ed05845f3b9d#egg=liteeth
+-e git+https://github.com/enjoy-digital/liteiclink.git@f5ac301745d18287f34f017ae13fa5d28523221d#egg=liteiclink
+-e git+https://github.com/enjoy-digital/litejesd204b.git@6231429b80f41db351abc69c22a5af09ca18c15a#egg=litejesd204b
+-e git+https://github.com/enjoy-digital/litepcie.git@21da327b74d96d84bb7c08932b837f237de5ad2b#egg=litepcie
+-e git+https://github.com/enjoy-digital/litesata.git@4dc440d1f637e878d4abbc670a619cd00acdb6ef#egg=litesata
+-e git+https://github.com/enjoy-digital/litescope.git@74ddd945c296c9c5621ff46a0f3f73d61dd57556#egg=litescope
+-e git+https://github.com/enjoy-digital/litesdcard.git@b243b3be4bd2cc038cc2b019c8795bdf5d86d03a#egg=litesdcard
+-e git+https://github.com/litex-hub/litespi.git@6ac38841ecd0033e9d686b40123966818a404f4a#egg=litespi
+-e git+https://github.com/enjoy-digital/litex.git@0b028d3956567a3da467166b48e4ef3fc2109077#egg=litex
+-e git+https://github.com/litex-hub/litex-boards.git@4002b8167c640ae7a9ea72b8ac8a5a2cc798587f#egg=litex_boards
+MarkupSafe==2.1.4
+matplotlib==3.9.2
+matplotlib-inline==0.1.6
+meson==1.5.1
+-e git+https://github.com/m-labs/migen.git@ccaee68e14d3636e1d8fb2e0864dd89b1b1f7384#egg=migen
+mistune==3.0.2
+mygene==3.2.2
+mysql-connector-python==8.3.0
+nbclient==0.9.0
+nbconvert==7.14.2
+nbformat==5.9.2
+nest-asyncio==1.6.0
+ninja==1.11.1.1
+notebook==7.0.8
+notebook_shim==0.2.3
+numpy==1.26.3
+oauth2client==4.1.3
+oauthlib==3.2.2
+openpyxl==3.1.5
+overrides==7.7.0
+packaging==23.2
+pandas==2.2.0
+pandocfilters==1.5.1
+parso==0.8.3
+pexpect==4.9.0
+pillow==10.4.0
+platformdirs==4.2.0
+plotly==5.24.1
+pooch==1.8.0
+prometheus-client==0.19.0
+prompt-toolkit==3.0.43
+proto-plus==1.24.0
+protobuf==5.28.2
+psutil==5.9.8
+ptyprocess==0.7.0
+pure-eval==0.2.2
+pyarrow==16.0.0
+pyasn1==0.6.1
+pyasn1_modules==0.4.1
+pycparser==2.21
+Pygments==2.17.2
+pyparsing==3.1.4
+pyserial==3.5
+python-dateutil==2.8.2
+python-dotenv==1.0.1
+python-json-logger==2.0.7
+-e git+https://github.com/litex-hub/pythondata-cpu-blackparrot.git@ba50883f12d33e1d834640640c84ddc9329bb68a#egg=pythondata_cpu_blackparrot
+-e git+https://github.com/litex-hub/pythondata-cpu-cv32e40p.git@c897dc0a291185a7ed6ef6904da1dc698909d6ed#egg=pythondata_cpu_cv32e40p
+-e git+https://github.com/litex-hub/pythondata-cpu-cv32e41p.git@a48ddd9fc6f1cabfb3a7ac679774d4eff1f296fc#egg=pythondata_cpu_cv32e41p
+-e git+https://github.com/litex-hub/pythondata-cpu-cva5.git@ea1075d60c82191a1391ad00aa55be916bb37ab7#egg=pythondata_cpu_cva5
+-e git+https://github.com/litex-hub/pythondata-cpu-cva6.git@13cbe4453e14960a80949f6d0c66b63aabffd3df#egg=pythondata_cpu_cva6
+-e git+https://github.com/litex-hub/pythondata-cpu-ibex.git@d3d53df613c2878152eaa382a8cd558efdf21ec6#egg=pythondata_cpu_ibex
+-e git+https://github.com/litex-hub/pythondata-cpu-lm32.git@594f2068e32a6faa84f05f9b443b58c3c4658113#egg=pythondata_cpu_lm32
+-e git+https://github.com/litex-hub/pythondata-cpu-marocchino.git@ae64a18899f40607569833c8ad415c768d7fb3dc#egg=pythondata_cpu_marocchino
+-e git+https://github.com/litex-hub/pythondata-cpu-microwatt.git@c69953aff92da0a2696877884a009c3718cfaa51#egg=pythondata_cpu_microwatt
+-e git+https://github.com/litex-hub/pythondata-cpu-minerva.git@fb0a0423ce861dfa75992551ca09401cc8c99b95#egg=pythondata_cpu_minerva
+-e git+https://github.com/litex-hub/pythondata-cpu-mor1kx.git@92628ec323dcce464185ad9e0f58a788c2be6989#egg=pythondata_cpu_mor1kx
+-e git+https://github.com/litex-hub/pythondata-cpu-naxriscv.git@dfb4bfdf19e864ec773f9c2ac2c90aef5a4961a2#egg=pythondata_cpu_naxriscv
+-e git+https://github.com/litex-hub/pythondata-cpu-picorv32.git@a6e8fd113527b39c1d18837968de7e6b9b59ea92#egg=pythondata_cpu_picorv32
+-e git+https://github.com/litex-hub/pythondata-cpu-rocket.git@55d7e42913e46ba33e2ade792eef13191c895852#egg=pythondata_cpu_rocket
+-e git+https://github.com/litex-hub/pythondata-cpu-serv.git@cdede3b5e35e0c8c385ff10d783905d95cd864ab#egg=pythondata_cpu_serv
+-e git+https://github.com/litex-hub/pythondata-cpu-vexiiriscv.git@1c67687543dcf60f37a6f1c87cfbf53934dfaeff#egg=pythondata_cpu_vexiiriscv
+-e git+https://github.com/litex-hub/pythondata-cpu-vexriscv.git@1979a644dbe64d8d32dfbdd970dccee6add63723#egg=pythondata_cpu_vexriscv
+-e git+https://github.com/litex-hub/pythondata-cpu-vexriscv-smp.git@1f8f8bb49538663759f043e83ebae311132fc3e5#egg=pythondata_cpu_vexriscv_smp
+-e git+https://github.com/litex-hub/pythondata-misc-tapcfg.git@fbcb02422940bbb97c492f0c970959d262b33632#egg=pythondata_misc_tapcfg
+-e git+https://github.com/litex-hub/pythondata-misc-usb_ohci.git@1f9c77314d3b91fe3194245c3e3197a075803199#egg=pythondata_misc_usb_ohci
+-e git+https://github.com/litex-hub/pythondata-software-compiler_rt.git@fcb03245613ccf3079cc833a701f13d0beaae09d#egg=pythondata_software_compiler_rt
+-e git+https://github.com/litex-hub/pythondata-software-picolibc.git@a5e11229885a87083ec54034f8d693ba52ea2718#egg=pythondata_software_picolibc
+pytz==2023.4
+PyYAML==6.0.1
+pyzmq==25.1.2
+referencing==0.33.0
+requests==2.28.2
+requests-oauthlib==2.0.0
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+rpds-py==0.17.1
+rsa==4.9
+scikit-learn==1.4.2
+scipy==1.13.0
+SCons==4.2.0
+semantic-version==2.9.0
+Send2Trash==1.8.2
+six==1.16.0
+sniffio==1.3.0
+soupsieve==2.5
+sqlparse==0.5.1
+stack-data==0.6.3
+str2bool==1.1
+tenacity==9.0.0
+terminado==0.18.0
+threadpoolctl==3.5.0
+tinycss2==1.2.1
+tornado==6.4
+tqdm==4.66.1
+traitlets==5.14.1
+types-python-dateutil==2.8.19.20240106
+tzdata==2023.4
+uri-template==1.3.0
+uritemplate==4.1.1
+urllib3==1.26.19
+-e git+https://github.com/litex-hub/valentyusb.git@0b534ccfccfcdcb7a5db219743f0c0b20e5ec412#egg=valentyusb
+wcwidth==0.2.13
+webcolors==1.13
+webencodings==0.5.1
+websocket-client==1.7.0
+Werkzeug==3.0.1
+whitenoise==6.6.0

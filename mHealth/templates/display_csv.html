@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>{{ file.title }}</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f9ff; /* Light blue background */
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .custom-box {
+            padding: 20px;
+        }
+
+        .c-box {
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(to right, #d9ebff, #bbdefb); /* Light blue gradient */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .c-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-primary {
+            border: none;
+            background-color: #01579b; /* Darker blue */
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #003c8f; /* Even darker blue */
+        }
+
+        h3 {
+            color: #01579b; /* Darker blue */
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: #bbdefb; /* Light blue */
+            color: #01579b; /* Darker blue */
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .navbar {
+            background-color: #bbdefb; /* Light blue */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/home">mHealth</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/profile" style="color: #01579b; font-size: 1.1rem;">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact" style="color: #01579b; font-size: 1.1rem;">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about" style="color: #01579b; font-size: 1.1rem;">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}" style="color: #01579b; font-size: 1.1rem;">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Content Section -->
+<div class="container mt-3 content">
+    <div class="row custom-box">
+        <div class="col-sm-12 mb-4">
+            <div class="card-body c-box">
+                <h5 class="card-title">{{ file.title }}</h5>
+                <p class="card-text">{{ file.description }}</p>
+                <a href="{% url 'download_hl7' %}" class="btn btn-primary">Download HL7</a>
+                {% comment %} <a href="{% url 'display_csv' file.id %}" class="btn btn-primary">View PPG</a> {% endcomment %}
+
+                <a href="#" class="btn btn-primary">View ECG Graph</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loop through each day's graph and display it -->
+    {% for graph in day_graphs %}
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>PPG vs Time Plot</h3>
+            {{ graph|safe }} <!-- Render Plotly interactive graph -->
+        </div>
+    </div>
+    
+    {% endfor %}
+</div>
+
+<!-- Footer Section -->
+<div class="footer">
+    <p>&copy; 2024 mHealth. All Rights Reserved.</p>
+    <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

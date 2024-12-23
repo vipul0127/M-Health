@@ -1,0 +1,31 @@
+<!-- templates/access_excel.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <title>Real-Time Excel Data</title>
+
+    <!-- Plotly JS -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Real-Time PPG vs Time Graph</h2>
+    {% if graph_json %}
+        <div id="graph"></div>
+        <script>
+            var graphData = {{ graph_json | safe }};
+            Plotly.newPlot('graph', graphData.data, graphData.layout);
+        </script>
+    {% elif error %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% else %}
+        <p>Loading data...</p>
+    {% endif %}
+</div>
+
+</body>
+</html>
