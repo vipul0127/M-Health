@@ -1,7 +1,3 @@
-To incorporate the home page at the beginning of the user journey and ensure it serves as a central hub for accessing features, here’s how you can update the flow and structure of the **mHealth - PPG-based Health Monitoring System**:
-
----
-
 # mHealth - PPG-based Health Monitoring System
 
 ## Home Page
