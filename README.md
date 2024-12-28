@@ -4,7 +4,7 @@
 
 ### 🏠 **Home Page**
 - Upon logging in, users will be redirected to the **Home Page**.
-   <img src="images/home'.jpeg" alt="Signup" width="400"/>
+   <img src="images/home'.jpeg" alt="Signup" />
 - The **Home Page** provides an overview of the system's available functionalities, including access to file uploads, file viewing, and data visualization.
 ---
 
@@ -14,7 +14,8 @@
 - **Post-signup Action**: After signing up, users must fill the **consent form** before proceeding to the home page.
 
    <img src="images/signup.jpeg" alt="Signup" width="400"/>
-   <img src="images/login.jpeg" alt="Login" width="400"/>  
+   <img src="images/login.jpeg" alt="Login" width="400"/>
+  
    *Login and Signup Page*
 
 ---
@@ -22,7 +23,8 @@
 ### 📑 **Consent Form**
 - The **consent form** is mandatory. Users cannot proceed to other pages unless the form is filled.
 
-   <img src="images/consent-form.jpeg" alt="Consent Form" width="400"/>  
+   <img src="images/consent-form.jpeg" alt="Consent Form" width="400"/>
+  
    *Consent Form Page*
 
 ---
@@ -31,7 +33,8 @@
 - After signing up and accepting the consent form, users can upload data files containing **sensor recordings**.
 - Each file must have a **file name** and a **sheet link** for the user to reference.
 
-   <img src="images/upload.jpeg" alt="File Upload" width="400"/>  
+   <img src="images/upload.jpeg" alt="File Upload" width="400"/>
+  
    *File Upload Page*
 
 ---
@@ -39,7 +42,8 @@
 ### 🗂️ **Viewing Files**
 - On the **Home Page**, users can view all **uploaded files**, with **timestamps** and **file names** displayed.
 
-   <img src="images/file_detail.jpeg" alt="View Files" width="400"/>  
+   <img src="images/file_detail.jpeg" alt="View Files" width="400"/>
+  
    *View Uploaded Files Page*
 
 ---
@@ -51,7 +55,8 @@ For each uploaded file, users can:
 - **📄 View File**: View the **raw file contents**.
 - **🔍 View HL7**: View the data in **HL7 format**.
 
-   <img src="images/options.jpeg" alt="File Actions" width="400"/>  
+   <img src="images/options.jpeg" alt="File Actions" width="400"/>
+  
    *File Actions Page*
 
 ---
@@ -60,7 +65,8 @@ For each uploaded file, users can:
 - When users click on **View PPG**, a graph is generated using the **PPG data**.
 - The graph displays **PPG readings** over time, with separate graphs for each day.
 
-   <img src="images/graph.jpeg" alt="PPG Graph" width="600"/>  
+   <img src="images/graph.jpeg" alt="PPG Graph" width="600"/>
+  
    *PPG Graph Display*
 
 ---
@@ -69,25 +75,21 @@ For each uploaded file, users can:
 - Users can view the **HL7 format data** for each uploaded file.
 - This provides a detailed breakdown of the health metrics in HL7 format.
 
-   <img src="images/hl7.jpeg" alt="HL7 View" width="400"/>  
+   <img src="images/hl7.jpeg" alt="HL7 View" width="400"/>
+  
    *View HL7 Data Page*
 
+---
+### 📄 **View Sheet Data**
+- Users can view the **raw data sheet** of the uploaded file in tabular format, offering transparency of the data.
+
+   <img src="images/view-sheet.png" alt="View Sheet" width="400"/>
+  
+   *View Sheet Data Page*
 ---
 
 ### ⬇️ **Download HL7**
 - Users can download the **HL7** formatted data file for further analysis or storage.
-
-   <img src="images/download-hl7.png" alt="Download HL7" width="400"/>  
-   *Download HL7 Page*
-
----
-
-### 📄 **View Sheet Data**
-- Users can view the **raw data sheet** of the uploaded file in tabular format, offering transparency of the data.
-
-   <img src="images/view-sheet.png" alt="View Sheet" width="400"/>  
-   *View Sheet Data Page*
-
 ---
 
 ## Requirements
