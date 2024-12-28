@@ -16,7 +16,8 @@
 - **Login**: Returning users can log in to access their data.
 - **Post-signup Action**: After signing up, users must fill the **consent form** before proceeding to the home page.
 
-   ![Signup and Login](assets/upload.jpeg)  
+   ![Signup](images/signup.jpeg)
+   ![Login](images/login.jpeg) 
    *Login and Signup Page*
 
 ---
@@ -24,7 +25,7 @@
 ### 📑 **Consent Form**
 - The **consent form** is mandatory. Users cannot proceed to other pages unless the form is filled.
 
-   ![Consent Form](https://your-image-url.com/consent-form.png)  
+   ![Consent Form]()  
    *Consent Form Page*
 
 ---
@@ -33,7 +34,7 @@
 - After signing up and accepting the consent form, users can upload data files containing **sensor recordings**.
 - Each file must have a **file name** and a **sheet link** for the user to reference.
 
-   ![File Upload](https://your-image-url.com/upload-file.png)  
+   ![File Upload](images/upload.jpeg)  
    *File Upload Page*
 
 ---
@@ -41,7 +42,7 @@
 ### 🗂️ **Viewing Files**
 - On the **Home Page**, users can view all **uploaded files**, with **timestamps** and **file names** displayed.
 
-   ![View Files](https://your-image-url.com/view-files.png)  
+   ![View Files](images/file_detail.jpeg)  
    *View Uploaded Files Page*
 
 ---
@@ -53,7 +54,7 @@ For each uploaded file, users can:
 - **📄 View File**: View the **raw file contents**.
 - **🔍 View HL7**: View the data in **HL7 format**.
 
-   ![File Actions](https://your-image-url.com/file-actions.png)  
+   ![File Actions](images/options.jpeg)  
    *File Actions Page*
 
 ---
@@ -62,7 +63,7 @@ For each uploaded file, users can:
 - When users click on **View PPG**, a graph is generated using the **PPG data**.
 - The graph displays **PPG readings** over time, with separate graphs for each day.
 
-   ![PPG Graph](https://your-image-url.com/ppg-graph.png)  
+   ![PPG Graph](images/graph.jpeg)  
    *PPG Graph Display*
 
 ---
@@ -71,7 +72,7 @@ For each uploaded file, users can:
 - Users can view the **HL7 format data** for each uploaded file.
 - This provides a detailed breakdown of the health metrics in HL7 format.
 
-   ![HL7 View](https://your-image-url.com/view-hl7.png)  
+   ![HL7 View](images/hl7.jpeg)  
    *View HL7 Data Page*
 
 ---
