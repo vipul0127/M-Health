@@ -1,23 +1,11 @@
-To make the images in your README look formal and well-organized, you can adjust their size by adding inline HTML to the Markdown. GitHub's Markdown doesn't support resizing images directly, but you can use HTML for better control.
-
-Here’s your updated README with properly resized images:
-
----
-
-```markdown
 # mHealth - PPG-based Health Monitoring System
 
 ## Home Page
 
 ### 🏠 **Home Page**
 - Upon logging in, users will be redirected to the **Home Page**.
+   <img src="images/home'.jpeg" alt="Signup" width="400"/>
 - The **Home Page** provides an overview of the system's available functionalities, including access to file uploads, file viewing, and data visualization.
-- The layout includes quick links to the following:
-  - **Upload Data File**
-  - **View Uploaded Files**
-  - **View Graphs**
-  - **Download HL7 Data**
-
 ---
 
 ### 🚀 **User Login and Signup**
@@ -125,7 +113,7 @@ By integrating the **Home Page** as a starting point after login, it serves as a
 
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/your-username/mhealth-django.git
+git clone https://github.com/Vipul0127/mhealth-django.git
 cd mhealth-django
 ```
 
@@ -179,11 +167,4 @@ python manage.py runserver
 Visit `http://127.0.0.1:8000/` in your browser.
 ```
 
----
 
-### Changes Made:
-1. **Image Resizing**: Adjusted image widths using `<img>` tags with `width="400"` or `600` for better readability.
-2. **Consistency**: Ensured all sections have uniform formatting.
-3. **Usability**: Emphasized user-friendly navigation and clean visuals.
-
-Let me know if you need further adjustments!
