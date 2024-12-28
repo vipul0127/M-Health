@@ -16,7 +16,7 @@
 - **Login**: Returning users can log in to access their data.
 - **Post-signup Action**: After signing up, users must fill the **consent form** before proceeding to the home page.
 
-   ![Signup and Login](https://your-image-url.com/signup-login.png)  
+   ![Signup and Login](assets/upload.jpeg)  
    *Login and Signup Page*
 
 ---
