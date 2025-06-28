@@ -1,172 +1,161 @@
-# mHealth - PPG-based Health Monitoring System
+# mHealth – Multi‑Signal Health Monitoring Platform
 
-## Home Page
+> **Physiological signals · Secure by design · Research‑grade analytics**
 
-### 🏠 **Home Page**
-- Upon logging in, users will be redirected to the **Home Page**.
-   <img src="images/home'.jpeg" alt="Signup" />
-- The **Home Page** provides an overview of the system's available functionalities, including access to file uploads, file viewing, and data visualization.
----
-
-### 🚀 **User Login and Signup**
-- **Sign Up**: Users must sign up with a **unique username** and **password**.
-- **Login**: Returning users can log in to access their data.
-- **Post-signup Action**: After signing up, users must fill the **consent form** before proceeding to the home page.
-
-   <img src="images/signup.jpeg" alt="Signup" width="400"/>
-   <img src="images/login.jpeg" alt="Login" width="400"/>
-  
-   *Login and Signup Page*
+mHealth is a full-stack, research-grade health data platform that allows the seamless ingestion, storage, analysis, and visualization of physiological signals like PPG (heart activity), GSR (stress level), and actigraphy (motion/sleep cycle). Built at IIIT-Delhi, it combines custom hardware with a Django-powered backend and interactive dashboards. It enables researchers and clinicians to extract meaningful insights from raw biosensor data while ensuring user consent, data security, and medical compliance.
 
 ---
 
-### 📑 **Consent Form**
-- The **consent form** is mandatory. Users cannot proceed to other pages unless the form is filled.
+## 🧾 Summary
 
-   <img src="images/consent-form.jpeg" alt="Consent Form" width="400"/>
-  
-   *Consent Form Page*
-
----
-
-### 📂 **Uploading Files**
-- After signing up and accepting the consent form, users can upload data files containing **sensor recordings**.
-- Each file must have a **file name** and a **sheet link** for the user to reference.
-
-   <img src="images/upload.jpeg" alt="File Upload" width="400"/>
-  
-   *File Upload Page*
+- Real-time sensor data is streamed to the backend via Wi-Fi from wearable hardware.
+- A user-friendly web interface allows onboarding, consent handling, and data uploads.
+- Users can visualize their signals through interactive graphs and download standardized HL7 medical data.
+- The system includes optimizations for large-scale datasets (200,000+ rows) and complies with HIPAA and GDPR.
+- Secure architecture includes AES encryption, TLS transmission, role-based access, and consent gating.
 
 ---
 
-### 🗂️ **Viewing Files**
-- On the **Home Page**, users can view all **uploaded files**, with **timestamps** and **file names** displayed.
+## 🖥️ Application Pages in Detail
 
-   <img src="images/file_detail.jpeg" alt="View Files" width="400"/>
-  
-   *View Uploaded Files Page*
-
----
-
-### ⚙️ **File Actions**
-For each uploaded file, users can:
-- **⬇️ Download HL7**: Download the file in **HL7 format**.
-- **📊 View PPG**: View a **graphical representation** of the **PPG data**.
-- **📄 View File**: View the **raw file contents**.
-- **🔍 View HL7**: View the data in **HL7 format**.
-
-   <img src="images/options.jpeg" alt="File Actions" width="400"/>
-  
-   *File Actions Page*
+### 🏠 Home Page
+After login, users land on the central dashboard or "Home Page." This is a control hub that:
+- Displays a summary of uploaded files with timestamps
+- Provides shortcuts to upload new data
+- Links to PPG, GSR, actigraphy graphs, HL7 export, and file viewing options
+- Presents user-specific views (based on role — Admin, Researcher, User)
 
 ---
 
-### 📉 **PPG Graph**
-- When users click on **View PPG**, a graph is generated using the **PPG data**.
-- The graph displays **PPG readings** over time, with separate graphs for each day.
-
-   <img src="images/graph.jpeg" alt="PPG Graph" width="600"/>
-  
-   *PPG Graph Display*
+### 🔐 Login and Sign-Up Page
+- Sign-up form that enforces strong passwords and validates unique usernames
+- Login form that verifies credentials securely via Django authentication
+- Redirect to consent form on first sign-up
 
 ---
 
-### 🔎 **View HL7 Data**
-- Users can view the **HL7 format data** for each uploaded file.
-- This provides a detailed breakdown of the health metrics in HL7 format.
-
-   <img src="images/hl7.jpeg" alt="HL7 View" width="400"/>
-  
-   *View HL7 Data Page*
-
----
-### 📄 **View Sheet Data**
-- Users can view the **raw data sheet** of the uploaded file in tabular format, offering transparency of the data.
-
-   <img src="images/view-sheet.png" alt="View Sheet" width="400"/>
-  
-   *View Sheet Data Page*
----
-
-### ⬇️ **Download HL7**
-- Users can download the **HL7** formatted data file for further analysis or storage.
----
-
-## Requirements
-
-- Python 3.x
-- Django 3.x or later
-- MySQL or SQLite for database
-- Required Libraries: `numpy`, `matplotlib`, `pandas`, etc.
+### 📝 Consent Form Page
+- Explains how physiological data will be used
+- Requires agreement to proceed further
+- Consent status stored securely
 
 ---
 
-## Installation and Setup
-
-Follow the instructions provided earlier for **cloning the repository**, **installing dependencies**, **setting up the database**, and running the development server.
-
----
-
-By integrating the **Home Page** as a starting point after login, it serves as a hub for users to access various functionalities like uploading files, viewing data, and downloading HL7-formatted reports. This updated structure enhances usability and ensures a streamlined user experience.
+### 📤 File Upload Page
+- Uploads CSV or links to Google Sheets
+- Assigns internal filename
+- Automatically organizes files per user
 
 ---
 
-### Step 1: Clone the Repository
+### 🗂️ Uploaded Files Page
+- Lists all uploaded files with timestamps
+- Allows actions: view raw sheet, visualize signals, view/download HL7
 
-Clone the repository to your local machine:
+---
+
+### 📊 PPG Visualization Page
+- Day-wise PPG trends
+- Zoom, pan, batch rendering for performance
+- Helps track cardiovascular metrics
+
+---
+
+### 📈 GSR Visualization Page
+- Time-series of GSR (stress) readings
+- Filters by time range
+- Multi-day anomaly detection
+
+---
+
+### 💤 Actigraphy Visualization Page
+- Motion/rest cycle graphs
+- Highlights periods of rest vs movement
+- Supports sleep tracking
+
+---
+
+### 📉 Compact Multi-Signal View Page
+- Combined GSR, PPG, and Actigraphy in one view
+- Toggle signals on/off
+- Best for correlation analysis
+
+---
+
+### 📄 HL7 Data View Page
+- Shows standardized medical data format
+- Includes PID and OBX segments
+- Timestamped entries for clinical use
+
+---
+
+### 📋 Raw Data Sheet Viewer Page
+- Tabular view of uploaded data
+- Search and scroll through original values
+
+---
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/Vipul0127/mhealth-django.git
+git clone https://github.com/YourUser/mhealth-django.git
 cd mhealth-django
 ```
 
-### Step 2: Install Dependencies
+---
 
-Create a virtual environment and install required dependencies:
+### 2. Create Virtual Environment and Install Dependencies
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Step 3: Set Up the Database
+---
 
-Create a database in MySQL or use the default SQLite database.
-Update the database settings in `settings.py`:
+### 3. Set Up the Database
+
+Edit `mhealth/settings.py`:
+
 ```python
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',  # Or 'sqlite3' for SQLite
-        'NAME': 'mhealth_db',
-        'USER': 'your-database-user',
-        'PASSWORD': 'your-database-password',
-        'HOST': 'localhost',
-        'PORT': '3306',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",  # or "sqlite3"
+        "NAME": "mhealth_db",
+        "USER": "your_db_user",
+        "PASSWORD": "your_db_password",
+        "HOST": "localhost",
+        "PORT": "3306",
     }
 }
 ```
 
-### Step 4: Migrate the Database
+Or keep the default SQLite database for quick local testing.
 
-Run the database migrations to create tables:
+---
+
+### 4. Apply Migrations
 ```bash
 python manage.py migrate
 ```
 
-### Step 5: Create a Superuser
+---
 
-Create a superuser to access the Django admin interface:
+### 5. Create Superuser
 ```bash
 python manage.py createsuperuser
 ```
 
-### Step 6: Run the Development Server
+Follow the prompts to set username and password.
 
-Start the server:
+---
+
+### 6. Run the Development Server
 ```bash
 python manage.py runserver
 ```
 
-Visit `http://127.0.0.1:8000/` in your browser.
-```
+Open in your browser: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-
+---
